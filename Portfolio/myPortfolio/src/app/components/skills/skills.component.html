@@ -1,0 +1,14 @@
+<div class="col-md-12"><h4 class="sub-title">General Skills</h4></div>
+<div class="row">
+    <div class="col-md-4" *ngFor='let skill of skills'>
+        <p *ngIf='skill.type == "general"'>{{skill.name}}</p>
+        <p *ngIf='skill.type == "general"'><ngb-progressbar [value]="skill.grade"></ngb-progressbar></p>
+    </div>
+</div>
+<div class="col-md-12"><h4 class="sub-title">Languages</h4></div>
+<div class="row">
+    <div class="col-md-4" *ngFor='let skill of skills'>
+        <p *ngIf='skill.type == "language"'>{{skill.name}}</p>
+        <p *ngIf='skill.type == "language"'><ngb-progressbar [value]="skill.grade"></ngb-progressbar></p>
+    </div>
+</div>
